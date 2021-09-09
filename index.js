@@ -56,6 +56,7 @@ function targetActive(curSlide,target){
 }
 
 function hideButton(targetSlide,slides){
+    
     if(targetSlide === slides[0]){
         leftarrow.classList.add("d-none");
         rightarrow.classList.remove("d-none");
