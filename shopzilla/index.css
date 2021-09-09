@@ -1,0 +1,141 @@
+body{
+    padding:10px;
+    margin:0;
+}
+.search-img{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 70px;
+    border: #dedddc;
+    border-style: solid;
+    border-width: 1px;
+    border-radius: 4px;
+}
+.mov-cont{
+    position: relative;
+    width:100%;
+}
+
+.carousel-container{
+    width:100vw;
+    height:300px;
+    position:relative;
+    overflow: hidden;
+}
+.carousel{
+    display:inline-block; 
+    list-style:none;
+    padding:0;
+    margin:0;
+    transition: transform 800ms ease;
+}
+
+.item{
+    text-align: center;
+    width:250px;
+    height:250px;
+    margin:10px;
+}
+.slide{
+    padding:0;
+    margin:0;
+    user-select:none;
+    position: absolute;
+}
+
+.fast-s-size{
+    font-size: 20px;
+    color: gray;
+}
+.btn-cust-orange{
+    background-color:  #FFC300;
+    color:white;
+    font-weight: 600;
+    width:140px;
+    font-size: 20px;
+}
+.search-bar{
+    height: 70px;
+}
+.cust-h{
+    height: 70px;
+}
+.bg-img-cont{
+    background-image: url(bg3.jpg);
+    height: 80vh;
+    width: 100%;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+.dropdown-cont{
+    align-self: flex-start;
+    background-color:#00B2FF;
+    color:white;
+    width:30%;
+    min-height: 80px;
+    padding-top: 20px;
+    
+}
+.dropcont{
+    align-self: flex-start;
+    background-color:#00B2FF;
+    color:white;
+    min-width:399px;
+    min-height: 200px;
+    padding-left: 40px;
+    padding-top: 10px;
+    position: absolute;
+    z-index: 1;
+    transition: transform 8000ms ease;
+}
+.dropdown-text{
+    margin-left: 40px;
+    font-size: 24px;
+}
+.Main-text{
+    padding-top: 150px;
+    padding-left: 150px;
+    align-self: flex-start;
+    width: 500px;
+    position: relative;
+    z-index: 0;
+}
+.bg-text-h1{
+    color: white;
+    font-weight: bold;
+    text-align: left;
+    font-size: 60px;
+}
+.bg-text-p{
+    color: white;
+    font-weight: bold;
+    text-align: left;
+    font-size: 20px;
+}
+
+.subh1{
+    font-size: 30px;
+    font-weight: 600;
+    text-align: center;
+}
+.items{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+}
+
+.fas-size{
+    color: gray;
+    font-size: 20px;
+}
+
+li{
+    list-style-type: none;
+}
+a{
+    color:black;
+}
