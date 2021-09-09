@@ -79,13 +79,16 @@ a{
     color:black;
 }
 
-@media (max-width:799px){
+@media screen and (max-width:799px) , (orientation:portrait){
     body{
         overflow-x: hidden;
         padding:0;
         margin: 0;
         padding-top: 10px;
         padding-left: 10px;
+    }
+    .head-container{
+        width: 100vw;
     }
     .search-bar{
         width:90vw;
@@ -97,6 +100,7 @@ a{
     .flexclass{
         display:flex;
         flex-direction: column;
+        width: 100vw;
     }
     .dropdown-cont{
         align-self: flex-start;
@@ -170,7 +174,11 @@ a{
         flex-wrap: wrap;
     }
 }
-@media (min-width:800px){
+@media screen and (min-width:801px) , (orientation:landscape){
+    
+    .head-container{
+        width: 100vw;
+    }
     .search-bar{
         width: 50vw;
         height: 70px;
@@ -182,6 +190,7 @@ a{
         display: flex;
         flex-direction: row;
         justify-content: space-between;
+        width: 100vw;
     }
     .botm-flex{
         width: 100vw;
