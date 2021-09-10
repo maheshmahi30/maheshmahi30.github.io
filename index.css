@@ -1,6 +1,27 @@
 body{
-    padding:10px;
+    overflow-x: hidden;
+    padding:0;
     margin:0;
+}
+.head-container{
+    padding-top: 10px;
+    padding-right: 10px;
+    padding-left: 10px;
+}
+.top-div{
+    width:100%;
+    display:flex;
+    flex-wrap: wrap;
+    padding:10px;
+}
+.logo-div{
+    width:100%;
+}
+
+.search-bar{
+    width:100%;
+    height:70px;
+    display:flex;
 }
 .search-img{
     display: flex;
@@ -12,13 +33,77 @@ body{
     border-width: 1px;
     border-radius: 4px;
 }
-.mov-cont{
-    position: relative;
+.btn-cust-orange{
+    background-color:  #FFC300;
+    color:white;
+    font-weight: 600;
+    width:140px;
+    font-size: 20px;
+}
+.cust-h{
+    height: 70px !important;
+}
+.bg-img-cont{
+    background-image: url(bg3.jpg);
+    height: 80vh;
+    width: 100%;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.dropdown-cont{
+    align-self: flex-start;
+    background-color:#00B2FF;
+    color:white;
+    width:250px;
+    min-height: 80px;
+    padding-top: 20px;
+}
+.dropcont{
+    align-self: flex-start;
+    background-color:#00B2FF;
+    color:white;
+    width:250px;
+    padding-left: 40px;
+    padding-top: 10px;
+    position: absolute;
+    z-index: 1;
+}
+.dropdown-text{
+    margin-left: 40px;
+    font-size: 24px;
+}
+.Main-text{
+    padding-top: 50px;
+    padding-left: 50px;
+    width:400px;
+    z-index: 0;
+}
+.bg-text-h1{
+    color: white;
+    font-weight: bold;
+    text-align: left;
+    font-size: 40px;
+}
+.bg-text-p{
+    color: white;
+    font-weight: bold;
+    text-align: left;
+    font-size: 20px;
+}
+/*main-cont*/
+.main-container{
+    padding:10px;
     width:100%;
 }
-
+.subh1{
+    font-size: 30px;
+    font-weight: 600;
+    text-align: center;
+}
 .carousel-container{
-    width:100vw;
+    width:100%;
     height:300px;
     position:relative;
     overflow: hidden;
@@ -30,14 +115,15 @@ body{
     margin:0;
     transition: transform 800ms ease;
 }
-
 .item{
     text-align: center;
-    width:250px;
-    height:250px;
-    margin:10px;
+    width:350px;
+    height:350px;
 }
 .slide{
+    display: flex;
+    justify-content: center;
+    width:100vw;
     padding:0;
     margin:0;
     user-select:none;
@@ -47,83 +133,6 @@ body{
 .fast-s-size{
     font-size: 20px;
     color: gray;
-}
-.btn-cust-orange{
-    background-color:  #FFC300;
-    color:white;
-    font-weight: 600;
-    width:140px;
-    font-size: 20px;
-}
-.search-bar{
-    height: 70px;
-}
-.cust-h{
-    height: 70px;
-}
-.bg-img-cont{
-    background-image: url(bg3.jpg);
-    height: 80vh;
-    width: 100%;
-    background-size: cover;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    
-}
-.dropdown-cont{
-    align-self: flex-start;
-    background-color:#00B2FF;
-    color:white;
-    width:30%;
-    min-height: 80px;
-    padding-top: 20px;
-}
-.dropcont{
-    align-self: flex-start;
-    background-color:#00B2FF;
-    color:white;
-    min-width:399px;
-    min-height: 200px;
-    padding-left: 40px;
-    padding-top: 10px;
-    position: absolute;
-    z-index: 1;
-}
-.dropdown-text{
-    margin-left: 40px;
-    font-size: 24px;
-}
-.Main-text{
-    padding-top: 150px;
-    padding-left: 150px;
-    align-self: flex-start;
-    width: 500px;
-    position: relative;
-    z-index: 0;
-}
-.bg-text-h1{
-    color: white;
-    font-weight: bold;
-    text-align: left;
-    font-size: 60px;
-}
-.bg-text-p{
-    color: white;
-    font-weight: bold;
-    text-align: left;
-    font-size: 20px;
-}
-
-.subh1{
-    font-size: 30px;
-    font-weight: 600;
-    text-align: center;
-}
-.items{
-    display: flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
 }
 
 .fas-size{
@@ -137,7 +146,66 @@ li{
 a{
     color:black;
 }
-
-@media (max-width : 600px){
-    
+.footer-container{
+    width: 100vw;
+    padding:10px;
 }
+.bottom-flex{
+    display: flex;
+    flex-wrap: wrap;
+}
+.wcol-50{
+    width:50%;
+    padding-bottom:10px;
+}
+
+
+@media only screen and (min-width: 768px) {
+    .logo-div{
+        width: 50%;
+    }
+    .search-bar{
+        width: 50%;
+    }
+    .dropdown-cont{
+        width:400px;
+        min-height: 80px;
+        padding-top: 20px;
+    }
+    .dropcont{
+        width:400px;
+    }
+    
+    .Main-text{
+        padding-top: 50px;
+        padding-left: 10px;
+        width:600px;
+        z-index: 0;
+    }
+    .bg-text-h1{
+        color: white;
+        font-weight: bold;
+        text-align: left;
+        font-size: 60px;
+    }
+    .bg-text-p{
+        color: white;
+        font-weight: bold;
+        text-align: left;
+        font-size: 20px;
+    }
+    .item{
+        text-align: center;
+        width:200px;
+        height:350px;
+    }
+    .slide{
+        width:250px;
+    }      
+    .wcol-50{
+        width:15%;
+        padding-bottom:10px;
+    }
+
+}
+  
